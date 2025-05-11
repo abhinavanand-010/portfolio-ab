@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Send, Phone, MapPin, Mail } from "lucide-react";
+import { Send, MapPin, Mail } from "lucide-react";
 import.meta.env.WEB3API
 
 export default function Contact() {

@@ -1,5 +1,5 @@
 import React from "react";
-import { Code2, Activity, Cpu, Layers, Network, Binary } from "lucide-react";
+import { Layers, Network } from "lucide-react";
 
 const ExperienceCard = ({
   title,
