@@ -37,7 +37,7 @@ export default function About() {
                 <blockquote className="pl-4 border-l-4 border-gray-300">
                   <p className="text-white">
                     
-                    I'm a lifelong learner and innovator, driven by a desire to
+                    I'm a lifelong learner and innovator with a desire to
                     contribute to the developer community with new ideas and
                     tools that deliver real value. 
                   </p>
