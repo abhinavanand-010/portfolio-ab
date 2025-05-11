@@ -44,8 +44,8 @@ jobs:
   
     - name: Unzip on EC2
       run: |
-        ssh -q -i key.pem -o StrictHostKeyChecking=no ${{ secrets.EC2_HOST }} << 'EOF'
+        ssh -i key.pem -o StrictHostKeyChecking=no ${{ secrets.EC2_HOST }} > /dev/null 2>&1 << 'EOF' 
           sudo rm -rf /var/www/html/*
           sudo unzip -o ~/dist.zip -d /var/www/html
-          
         EOF
+      
