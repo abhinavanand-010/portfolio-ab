@@ -28,7 +28,7 @@ jobs:
     - run: npm run build --if-present
 
     - name: Zip dist folder
-      run: zip -r dist.zip dist
+      run: zip -r dist.zip dist/*
 
     - name: Write SSH key to file
       run: |
@@ -44,4 +44,5 @@ jobs:
         ssh -i key.pem -o StrictHostKeyChecking=no ${{ secrets.EC2_HOST }} << 'EOF'
           sudo rm -rf /var/www/html/*
           sudo unzip -o ~/dist.zip -d /var/www/html
+          
         EOF
