@@ -1,5 +1,4 @@
 import HeroImg from "@/assets/images/aa.png";
-import OlovaLogo from "@/assets/images/olova.png";
 
 export default function About() {
   return (
@@ -25,7 +24,7 @@ export default function About() {
             <div className="relative space-y-4">
               <p className="text-white">
                 Hello! I'm Abhinav Anand, a passionate engineer
-                specializing in creating innovative solutions and
+                specialized in creating innovative solutions and
                 user-friendly interfaces.{" "}
                 I'm dedicated to simplifying development workflows.
               </p>
