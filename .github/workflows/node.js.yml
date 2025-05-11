@@ -30,13 +30,18 @@ jobs:
     - name: Zip dist folder
       run: zip -r dist.zip dist
 
+    - name: Write SSH key to file
+      run: |
+        echo "${{ secrets.EC2_SSH_KEY }}" > key.pem
+        chmod 600 key.pem
+
     - name: Copy dist.zip to EC2 via SCP
       run: |
-        scp -i ${{ secrets.EC2_SSH_KEY }} -o StrictHostKeyChecking=no dist.zip ${{ secrets.EC2_HOST }}:/home/ubuntu/
-
+        scp -i key.pem -o StrictHostKeyChecking=no dist.zip ${{ secrets.EC2_HOST }}:~/dist.zip
+  
     - name: Unzip on EC2
       run: |
-        ssh -i ${{ secrets.EC2_SSH_KEY }} -o StrictHostKeyChecking=no ${{ secrets.EC2_HOST }} << 'EOF'
+        ssh -i key.pem -o StrictHostKeyChecking=no ${{ secrets.EC2_HOST }} << 'EOF'
           sudo rm -rf /var/www/html/*
-          sudo unzip -o /home/ubuntu/dist.zip -d /var/www/html
+          sudo unzip -o ~/dist.zip -d /var/www/html
         EOF
