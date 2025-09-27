@@ -42,22 +42,13 @@ const GridBackground = () => {
 
 export default function Hero() {
   const words = [
+    "Software Engineer",
     "Backend Engineer",
-    "DevOps Engineer",
-    "Full-Stack Developer",
+    "Full-Stack",
     "Learning: Java",
     "Go"
   ];
 
-
-      // yearsOfExperience: 1, 
-      
-    // hireable: function() {
-    //     return (
-    //         this.hardWorker &&
-    //         this.problemSolver &&
-    //         this.skills.length >= 5 &&
-    //     );
   const [code] = useState(`
 const profile = {
     name: 'Abhinav Anand',

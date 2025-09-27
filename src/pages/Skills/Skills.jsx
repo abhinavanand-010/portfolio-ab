@@ -20,6 +20,7 @@ import {
   SiPostgresql,
   SiMongodb,
   SiGraphql,
+  SiAnsible,
   SiJest,
   SiWebpack,
   SiRedux,
@@ -135,6 +136,10 @@ const SkillsSection = () => {
         {
           name: "Azure",
           icon: <BsGrid1X2 className="w-4 h-4 text-[#326CE5]" />,
+        },
+        {
+          name: "Ansible",
+          icon: <SiAnsible className="w-4 h-4 text-[#326CE5]" />,
         },
         {
           name: "Docker",

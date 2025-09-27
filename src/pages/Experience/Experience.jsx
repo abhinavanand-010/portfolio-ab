@@ -54,22 +54,29 @@ const ExperienceCard = ({
 const ExperienceSection = () => {
   const experiences = [
     {
+      icon: Layers,
+      title: "Software Engineer Intern",
+      company: "Vimaan",
+      period: "Aug 2025 - Present",
+      description:
+        "Working on infrastructure automation and optimization, along with Development of internal tools using Python and Ansible",
+    },
+    {
       icon: Network,
-      title: "DevOps Engineer Intern",
+      title: "Software Engineer Intern",
       company: "HashedIn by Deloitte",
-      period: "Apr 2025 - Present",
+      period: "Apr 2025 - June 2025",
       description:
         "Automated CI/CD pipelines with Jenkins and GitHub, optimized AWS infrastructure using ELBs and Terraform for scalable, reliable deployments.",
     },
     {
       icon: Layers,
-      title: "Techno Functional Intern",
+      title: "Technical Intern",
       company: "Captiv techno solutions Pvt Ltd",
       period: "Jan 2025 - Mar 2025",
       description:
         "Collaborated with stakeholders to gather business requirements, optimized SQL queries for improved performance, and developed automated Selenium tests, significantly reducing manual testing time.",
     },
-
   ];
 
   return (
