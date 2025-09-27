@@ -16,7 +16,7 @@ const EducationSection = () => {
       degree: "Computer Science and Engineering",
       school: "KLE Technological University",
       mascot: "🎓",
-      year: "2019-2021",
+      year: "2021-2025",
       achievements: ["CGPA: 8.45", "SIH 2024 Qualifiers"],
       skills: ["Operating Systems", "Computer Networking", "Algorithms", "Data Structures", "Machine Learning", "System Programming"],
       description:
